@@ -40,6 +40,13 @@
 						<button type="submit" class="btn btn-primary" ng-disabled="postForm.$invalid">Add Post</button>	
 					</div>					
 				</div>
+				<div class="col-md-5" ng-if="happyPost.show">
+					<div class="well">
+						<p>Title: {{happyPost.content.title}}</p>
+
+						<p>Post: {{happyPost.content.post}}</p>
+					</div>
+				</div>
 			</div>
 		</form>
 	</div>
