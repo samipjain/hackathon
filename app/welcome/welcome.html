@@ -7,7 +7,7 @@
 	<nav class="navbar navbar-inverse">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a href="#" class="navbar-brand">MyDiary</a>
+				<a href="#" class="navbar-brand">MyStory</a>
 			</div>
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="#">Home</a></li>
@@ -23,17 +23,13 @@
 				<h3>Welcome Home {{username}}</h3>
 			</div>
 			<div class="col-md-6">
-				<div class="well">
-					<p>Title: Title 1</p>
-					<p>Post: Contents for TItle 1</p>
-				</div>
-				<div class="well">
-					<p>Title: Title 2</p>
-					<p>Post: Contents for TItle 2</p>
-				</div>
-			</div>
+				<div class="well" ng-repeat="item in post">
+					<p><strong>Title:</strong> {{item.title}}</p>
+					<p><strong>Post:</strong> {{item.post}}</p>
+				</div>				
+			</div>			
 			<div class="col-md-6">
-				<img src="screen-stats.jpg" width="700px" height="400px"/>
+				<img src="screen-stats.jpg" width="800px" height="400px"/>
 			</div>
 		</div>
 	</div>
